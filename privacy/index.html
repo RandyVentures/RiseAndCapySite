@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rise &amp; Capy — Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for Rise & Capy: what stays on your iPhone, what RevenueCat handles for purchases, and what we never collect." />
+    <link rel="canonical" href="https://randyventures.github.io/RiseAndCapySite/privacy/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rise & Capy" />
+    <meta property="og:title" content="Rise & Capy — Privacy Policy" />
+    <meta property="og:description" content="What stays on your iPhone, what RevenueCat handles for purchases, and what we never collect." />
+    <meta property="og:url" content="https://randyventures.github.io/RiseAndCapySite/privacy/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#FFF8F0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#241A14" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <style>
+      :root {
+        --bg: #FFF8F0;
+        --surface: #FFFFFF;
+        --ink: #4A342A;
+        --muted: #8A6F5C;
+        --brown-deep: #8C5A34;
+        --coral: #FF8B6B;
+        --line: rgba(74, 52, 42, 0.13);
+        --line-strong: rgba(74, 52, 42, 0.22);
+        --surface-doc: rgba(255, 255, 255, 0.7);
+        --header-bg: rgba(255, 248, 240, 0.78);
+        --shadow-sm: 0 8px 24px -16px rgba(74, 52, 42, 0.32);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #241a14;
+          --surface: rgba(255, 255, 255, 0.05);
+          --ink: #fbeee0;
+          --muted: #cbb7a8;
+          --brown-deep: #f0b98a;
+          --coral: #ff9c82;
+          --line: rgba(255, 255, 255, 0.1);
+          --line-strong: rgba(255, 255, 255, 0.17);
+          --surface-doc: rgba(255, 255, 255, 0.04);
+          --header-bg: rgba(36, 26, 20, 0.78);
+          --shadow-sm: 0 8px 24px -14px rgba(0, 0, 0, 0.55);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; color: var(--ink);
+        font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
+        line-height: 1.65; -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--brown-deep); }
+      .wrap { width: min(860px, calc(100% - 36px)); margin: 0 auto; }
+
+      .site-header {
+        position: sticky; top: 0; z-index: 10;
+        background: var(--header-bg); border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(16px) saturate(160%); -webkit-backdrop-filter: blur(16px) saturate(160%);
+      }
+      .topbar { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 1.05rem; }
+      .brand img { border-radius: 7px; }
+      .back {
+        display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none;
+        font-weight: 700; font-size: 0.92rem; min-height: 38px; padding: 0 12px; border-radius: 999px;
+        transition: color 160ms ease, background 160ms ease;
+      }
+      .back:hover { color: var(--ink); background: var(--surface); }
+
+      main { padding: 44px 0 26px; }
+
+      .meta {
+        display: inline-flex; color: var(--brown-deep); border: 1px solid rgba(255, 139, 107, 0.32);
+        background: rgba(255, 139, 107, 0.1); border-radius: 999px; padding: 7px 13px;
+        font-size: 0.82rem; font-weight: 850;
+      }
+
+      h1 { margin: 18px 0 12px; font-size: clamp(2.2rem, 7vw, 3.6rem); line-height: 0.98; letter-spacing: -0.02em; font-weight: 800; }
+      .lede { max-width: 68ch; margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+      .toc { margin: 28px 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+      .toc strong { display: block; margin-bottom: 8px; color: var(--muted); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; }
+      .toc ol { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 7px 22px; }
+      .toc a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+      .toc a:hover { color: var(--brown-deep); }
+
+      article { border: 1px solid var(--line); border-radius: 16px; background: var(--surface-doc); padding: clamp(22px, 5vw, 42px); }
+      section { scroll-margin-top: 86px; }
+      section + section { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
+      h2 { margin: 0 0 10px; font-size: 1.2rem; line-height: 1.2; font-weight: 750; }
+      p, li { color: var(--muted); }
+      p { margin: 0 0 10px; }
+      p:last-child { margin-bottom: 0; }
+      ul { margin: 10px 0 0; padding-left: 20px; }
+      li { margin-bottom: 7px; }
+
+      footer { padding: 28px 0 44px; color: var(--muted); }
+      .footer-inner {
+        display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+        border-top: 1px solid var(--line); padding-top: 22px; font-size: 0.92rem;
+      }
+      .footer-links { display: flex; gap: 10px; flex-wrap: wrap; }
+      .footer-links a {
+        color: var(--muted); text-decoration: none; font-weight: 700; padding: 6px 10px; border-radius: 8px;
+        transition: color 160ms ease, background 160ms ease;
+      }
+      .footer-links a:hover { color: var(--ink); background: var(--surface); }
+
+      :focus-visible { outline: 2px solid var(--coral); outline-offset: 4px; border-radius: 8px; }
+
+      @media (max-width: 640px) {
+        .toc ol { grid-template-columns: 1fr; }
+        .back span { display: none; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="../" aria-label="Rise & Capy home">
+          <img src="../icon.png" width="24" height="24" alt="" />
+          <span>Rise &amp; Capy</span>
+        </a>
+        <a class="back" href="../">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          <span>Back to home</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <span class="meta">Last updated: August 22, 2026</span>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          This Privacy Policy explains what information Rise &amp; Capy handles when you use the app and this website. The short version: your alarms, preferences, and streak never leave your iPhone, and the only outside service involved is Apple's purchase processing through RevenueCat.
+        </p>
+
+        <nav class="toc" aria-label="Contents">
+          <strong>Contents</strong>
+          <ol>
+            <li><a href="#who">Who we are</a></li>
+            <li><a href="#device">What stays on your device</a></li>
+            <li><a href="#leaves">What leaves your device</a></li>
+            <li><a href="#use">How we use information</a></li>
+            <li><a href="#storage">Storage and sharing</a></li>
+            <li><a href="#choices">Your choices</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#changes">Changes</a></li>
+          </ol>
+        </nav>
+
+        <article>
+          <section id="who">
+            <h2>Who we are</h2>
+            <p>
+              Rise &amp; Capy is made by Randy Ventures. Questions about this policy can be sent to
+              <a href="mailto:randyventures06@gmail.com">randyventures06@gmail.com</a>.
+            </p>
+          </section>
+
+          <section id="device">
+            <h2>What stays on your device</h2>
+            <p>Rise &amp; Capy has no account system and no backend server. The following is stored only in your iPhone's local app storage, using Apple's standard on-device mechanisms:</p>
+            <ul>
+              <li><strong>Onboarding answers.</strong> Your morning intention, wake time, chosen days, wake-up style, and capybara personality.</li>
+              <li><strong>Alarms.</strong> Alarm times, repeat days, labels, chosen sound, snooze settings, personality, and wake-up mission for each alarm you create.</li>
+              <li><strong>Wake history and streak.</strong> A simple count of mornings you've woken up with Capy.</li>
+              <li><strong>Settings.</strong> Your default alarm preferences and app settings.</li>
+              <li><strong>Motion data for the "shake off the fog" mission.</strong> Read on-device using Apple's Core Motion framework to detect a shake gesture. It is never stored or transmitted anywhere.</li>
+            </ul>
+            <p>Deleting the app deletes all of this data. None of it is ever uploaded to us or to any third party.</p>
+          </section>
+
+          <section id="leaves">
+            <h2>What leaves your device</h2>
+            <p>The only information that leaves your iPhone is what's required to process your one-time purchase:</p>
+            <ul>
+              <li>
+                <strong>Purchases (RevenueCat).</strong> When you buy the Rise &amp; Capy full unlock, Apple processes the payment and RevenueCat, our purchase-management provider, receives purchase receipts, transaction identifiers, and an anonymous app-generated user ID so the app can verify your entitlement. We never see your payment details. See RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.
+              </li>
+              <li>
+                <strong>Apple.</strong> The App Store handles billing and standard app diagnostics per your iOS settings. Apple's AlarmKit framework schedules your alarms directly with iOS — this happens on-device and is not something we or RevenueCat can see.
+              </li>
+              <li>
+                <strong>Support email.</strong> If you email us for support, we handle whatever you choose to include in that message — such as your email address, device model, and description of the issue — only to respond to your request.
+              </li>
+            </ul>
+            <p>Rise &amp; Capy does not use analytics SDKs, advertising SDKs, or any tracking of your activity in the app.</p>
+          </section>
+
+          <section id="use">
+            <h2>How we use information</h2>
+            <ul>
+              <li>To schedule and present your alarms through Apple's AlarmKit.</li>
+              <li>To remember your preferences, alarms, and streak between app launches.</li>
+              <li>To verify your one-time purchase entitlement through RevenueCat so the full app stays unlocked.</li>
+              <li>To respond to support requests you send us.</li>
+            </ul>
+          </section>
+
+          <section id="storage">
+            <h2>Storage and sharing</h2>
+            <p>
+              We do not run a server, do not maintain a user database, and do not sell your information — there is nothing to sell, because we never receive it in the first place. The only information that leaves your device is described above, and it is shared only with Apple and RevenueCat as necessary to process your purchase.
+            </p>
+          </section>
+
+          <section id="choices">
+            <h2>Your choices</h2>
+            <ul>
+              <li>You can manage or request a refund for your purchase through your Apple ID purchase history, under Apple's standard App Store policies.</li>
+              <li>You can restore your purchase from Settings inside the app if you reinstall or switch devices.</li>
+              <li>You can control motion access for the shake mission through iOS Settings, if your device prompts for it.</li>
+              <li>Deleting the app permanently removes all local data — alarms, preferences, and streak. There is no server copy to delete, because none exists.</li>
+            </ul>
+          </section>
+
+          <section id="children">
+            <h2>Children</h2>
+            <p>
+              Rise &amp; Capy is designed for teenagers and young adults and is not directed to children under 13. We do not knowingly collect personal information from children under 13, and given the app's local-only design, we do not collect personal information from any user in the first place.
+            </p>
+          </section>
+
+          <section id="changes">
+            <h2>Changes to this policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time. When we do, we will post the updated version here and revise the date at the top of this page.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="wrap">
+      <div class="footer-inner">
+        <div>&copy; 2026 Rise &amp; Capy by Randy Ventures</div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="../">Home</a>
+          <a href="../terms/">Terms of Use</a>
+          <a href="../faq/">FAQ</a>
+          <a href="mailto:randyventures06@gmail.com">Support</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
