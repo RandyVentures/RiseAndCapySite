@@ -1,6 +1,8 @@
 # Rise & Capy — marketing site
 
-Static marketing/support site for [Rise & Capy](https://github.com/RandyVentures/RiseAndCapy), deployed to GitHub Pages via GitHub Actions.
+Static marketing/support site for [Rise & Capy](https://github.com/RandyVentures/RiseAndCapy), live at [randyventures.github.io/RiseAndCapySite](https://randyventures.github.io/RiseAndCapySite/).
+
+GitHub Pages is configured as **Deploy from a branch** (`main`, `/root`) in repo settings — GitHub rebuilds it automatically on every push, no workflow file needed. `.nojekyll` disables Jekyll processing so the `privacy/`, `terms/`, and `faq/` folders serve as-is.
 
 ## Structure
 
@@ -18,7 +20,7 @@ Plain HTML/CSS, no build step, no framework — same convention as the other Ran
 
 ## Editing
 
-Just edit the HTML files directly and push to `main` — `.github/workflows/pages.yml` deploys automatically. There's no local dev server needed; open `index.html` directly in a browser to preview.
+Just edit the HTML files directly and push to `main` — GitHub Pages redeploys automatically within a minute or two. There's no local dev server needed; open `index.html` directly in a browser to preview, or run a quick static server (e.g. `python3 -m http.server`) so relative links and anchors behave exactly as they will live.
 
 ## Before this app is live
 
