@@ -2,43 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Rise &amp; Capy — A calmer capybara alarm clock for iPhone</title>
-    <meta name="description" content="Rise &amp; Capy is a cozy capybara alarm clock for iPhone with real AlarmKit alarms, playful wake-up missions, and four capybara personalities. One-time $9.99 purchase — no subscription, no account, no ads." />
+    <meta name="description" content="Rise &amp; Capy is a cozy capybara alarm clock for iPhone with real AlarmKit alarms, playful wake-up missions, and four capybara personalities. Free to download; one $9.99 purchase unlocks it for good — no subscription, no account, no ads." />
     <meta name="theme-color" content="#FFF8F0" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#241A14" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#1B1410" media="(prefers-color-scheme: dark)" />
     <meta property="og:title" content="Rise & Capy — A calmer capybara alarm clock for iPhone" />
-    <meta property="og:description" content="Real AlarmKit alarms, playful wake-up missions, and four capybara personalities. One-time $9.99 purchase — no subscription, no account." />
+    <meta property="og:description" content="Real AlarmKit alarms, playful wake-up missions, and four capybara personalities. Now on the App Store — pay once, no subscription." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Rise & Capy" />
     <meta property="og:url" content="https://randyventures.github.io/RiseAndCapySite/" />
-    <meta property="og:image" content="https://randyventures.github.io/RiseAndCapySite/screenshot-welcome.jpg" />
-    <meta property="og:image:alt" content="Rise & Capy welcome screen showing the Capy mascot" />
+    <meta property="og:image" content="https://randyventures.github.io/RiseAndCapySite/og.png" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="Rise & Capy app icon and capybara mascot waving, with 'Now on the App Store'" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rise & Capy — A calmer capybara alarm clock for iPhone" />
-    <meta name="twitter:description" content="Real AlarmKit alarms, playful wake-up missions, and four capybara personalities. One-time $9.99 purchase — no subscription, no account." />
-    <meta name="twitter:image" content="https://randyventures.github.io/RiseAndCapySite/screenshot-welcome.jpg" />
+    <meta name="twitter:description" content="Real AlarmKit alarms, playful wake-up missions, and four capybara personalities. Now on the App Store." />
+    <meta name="twitter:image" content="https://randyventures.github.io/RiseAndCapySite/og.png" />
     <link rel="canonical" href="https://randyventures.github.io/RiseAndCapySite/" />
     <meta name="apple-itunes-app" content="app-id=6804264261" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@type": "MobileApplication",
         "name": "Rise & Capy",
-        "operatingSystem": "iOS",
+        "operatingSystem": "iOS 26.0 or later",
         "applicationCategory": "LifestyleApplication",
-        "description": "A cozy capybara alarm clock for iPhone. Real AlarmKit alarms, playful wake-up missions, and four capybara personalities, all running locally with no account required.",
+        "description": "A cozy capybara alarm clock for iPhone. Real AlarmKit alarms, playful wake-up missions, and four capybara personalities, all running locally with no account required. Free to download with a one-time $9.99 unlock.",
         "url": "https://randyventures.github.io/RiseAndCapySite/",
         "downloadUrl": "https://apps.apple.com/app/id6804264261",
         "installUrl": "https://apps.apple.com/app/id6804264261",
-        "image": "https://randyventures.github.io/RiseAndCapySite/screenshot-welcome.jpg",
+        "image": "https://randyventures.github.io/RiseAndCapySite/og.png",
         "author": { "@type": "Person", "name": "Randy Torres" },
-        "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "USD" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
         "featureList": [
           "Real system alarms via Apple's AlarmKit",
           "Playful wake-up missions: tap, pattern, shake, question",
           "Four capybara personalities with distinct moods and copy",
-          "One-time purchase, no subscription",
+          "One-time $9.99 unlock, no subscription",
           "No account, no ads, no data leaves your phone"
         ]
       }
@@ -46,551 +48,685 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
         --bg: #FFF8F0;
-        --bg-2: #FDECD9;
+        --bg-2: #FDEBD8;
         --surface: #FFFFFF;
         --surface-2: #FFF3E6;
         --ink: #4A342A;
-        --muted: #8A6F5C;
+        --muted: #86695A;
         --brown: #B98255;
         --brown-deep: #8C5A34;
         --coral: #FF8B6B;
         --orange: #FF9F5A;
         --mint: #A8CBB7;
+        --mint-deep: #5FA27C;
         --taupe: #B9AC9A;
-        --line: rgba(74, 52, 42, 0.13);
-        --line-strong: rgba(74, 52, 42, 0.22);
-        --shadow: 0 24px 60px -28px rgba(74, 52, 42, 0.4);
-        --shadow-sm: 0 8px 24px -16px rgba(74, 52, 42, 0.32);
-        --radius: 22px;
-        --header-bg: rgba(255, 248, 240, 0.74);
+        --night: #17142F;
+        --line: rgba(74, 52, 42, 0.12);
+        --line-strong: rgba(74, 52, 42, 0.2);
+        --shadow: 0 30px 70px -34px rgba(74, 52, 42, 0.45);
+        --shadow-sm: 0 10px 28px -18px rgba(74, 52, 42, 0.35);
+        --radius: 28px;
+        --display: "Fredoka", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+        --body: "Nunito", ui-rounded, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --nav-bg: rgba(255, 250, 244, 0.78);
+        color-scheme: light;
       }
-
       @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #241a14;
-          --bg-2: #1a120d;
-          --surface: rgba(255, 255, 255, 0.05);
-          --surface-2: rgba(255, 255, 255, 0.03);
-          --ink: #fbeee0;
-          --muted: #cbb7a8;
-          --brown: #d79f70;
-          --brown-deep: #f0b98a;
-          --coral: #ff9c82;
-          --orange: #ffb570;
-          --mint: #bfe0cd;
-          --taupe: #cfc2b2;
-          --line: rgba(255, 255, 255, 0.1);
-          --line-strong: rgba(255, 255, 255, 0.17);
-          --shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.65);
-          --shadow-sm: 0 8px 24px -14px rgba(0, 0, 0, 0.55);
-          --header-bg: rgba(36, 26, 20, 0.74);
+        :root:not([data-theme="light"]) {
+          --bg: #1B1410;
+          --bg-2: #140E0B;
+          --surface: #261C17;
+          --surface-2: #211813;
+          --ink: #FBEEE0;
+          --muted: #CDB8A8;
+          --brown: #D79F70;
+          --brown-deep: #F0B98A;
+          --coral: #FF9C82;
+          --orange: #FFB570;
+          --mint: #BFE0CD;
+          --mint-deep: #8FD0AA;
+          --line: rgba(255, 255, 255, 0.09);
+          --line-strong: rgba(255, 255, 255, 0.16);
+          --shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.7);
+          --shadow-sm: 0 10px 28px -16px rgba(0, 0, 0, 0.6);
+          --nav-bg: rgba(30, 22, 18, 0.78);
+          color-scheme: dark;
         }
+      }
+      :root[data-theme="dark"] {
+        --bg: #1B1410; --bg-2: #140E0B; --surface: #261C17; --surface-2: #211813; --ink: #FBEEE0; --muted: #CDB8A8;
+        --brown: #D79F70; --brown-deep: #F0B98A; --coral: #FF9C82; --orange: #FFB570; --mint: #BFE0CD; --mint-deep: #8FD0AA;
+        --line: rgba(255,255,255,.09); --line-strong: rgba(255,255,255,.16); --nav-bg: rgba(30,22,18,.78); color-scheme: dark;
       }
 
       * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
+      html { scroll-behavior: smooth; scroll-padding-top: 90px; }
       body {
         margin: 0;
         color: var(--ink);
-        font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background:
-          radial-gradient(65% 55% at 10% -5%, rgba(255, 159, 90, 0.16), transparent 60%),
-          radial-gradient(60% 50% at 95% 0%, rgba(168, 203, 183, 0.16), transparent 55%),
-          linear-gradient(170deg, var(--surface) 0%, var(--bg) 45%, var(--bg-2) 100%);
-        background-attachment: fixed;
+        font-family: var(--body);
+        font-size: 17px;
+        line-height: 1.55;
+        background: var(--bg);
         -webkit-font-smoothing: antialiased;
-        line-height: 1.5;
+        overflow-x: hidden;
       }
-
+      img, svg { display: block; max-width: 100%; }
       a { color: var(--brown-deep); }
+      h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; margin: 0; line-height: 1.05; }
+      .wrap { width: min(1200px, calc(100% - 40px)); margin: 0 auto; }
+      @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } }
+      :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; border-radius: 10px; }
+      .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-      .wrap { width: min(1140px, calc(100% - 40px)); margin: 0 auto; }
-
-      /* ---------- Header ---------- */
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        backdrop-filter: saturate(160%) blur(14px);
-        -webkit-backdrop-filter: saturate(160%) blur(14px);
-        background: var(--header-bg);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-        padding: 14px 0;
-      }
-
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--ink);
-        font-size: 1.18rem;
-        font-weight: 800;
-        letter-spacing: -0.01em;
-        text-decoration: none;
-      }
-
-      .brand-icon { display: block; border-radius: 9px; box-shadow: var(--shadow-sm); }
-
-      .nav-links { display: inline-flex; align-items: center; gap: 6px; }
-
-      .nav-links a {
-        color: var(--muted);
-        font-weight: 650;
-        font-size: 0.94rem;
-        text-decoration: none;
-        padding: 8px 12px;
-        border-radius: 10px;
-        transition: color 160ms ease, background 160ms ease;
-      }
-
-      .nav-links a:hover { color: var(--ink); background: var(--surface); }
-
-      .nav-cta {
-        color: #fff !important;
-        background: linear-gradient(135deg, var(--coral), var(--orange));
+      /* ---------- Nav ---------- */
+      .nav {
+        position: sticky; top: 12px; z-index: 50;
+        margin: 12px auto 0; width: min(1200px, calc(100% - 24px));
+        display: flex; align-items: center; justify-content: space-between; gap: 12px;
+        padding: 8px 8px 8px 16px; border-radius: 999px;
+        background: var(--nav-bg); border: 1px solid var(--line);
+        backdrop-filter: saturate(170%) blur(16px); -webkit-backdrop-filter: saturate(170%) blur(16px);
         box-shadow: var(--shadow-sm);
       }
-      .nav-cta:hover { filter: brightness(1.06); }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: var(--display); font-weight: 600; font-size: 1.2rem; }
+      .brand img { border-radius: 9px; }
+      .nav-links { display: flex; align-items: center; gap: 2px; }
+      .nav-links a { color: var(--muted); text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 9px 14px; border-radius: 999px; transition: color .2s, background .2s; }
+      .nav-links a:hover { color: var(--ink); background: var(--surface-2); }
+      .nav-cta { color: #fff !important; background: var(--ink) !important; }
+      :root[data-theme="dark"] .nav-cta { color: var(--bg) !important; }
+      @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nav-cta { color: var(--bg) !important; } }
+      .nav-cta:hover { filter: brightness(1.15); }
+      @media (max-width: 760px) { .nav-links a:not(.nav-cta) { display: none; } }
 
-      @media (max-width: 620px) { .nav-text { display: none; } }
-      @media (max-width: 480px) {
-        .nav-links a:not(.nav-cta) { display: none; }
-        .wrap { width: calc(100% - 28px); }
+      /* ---------- Buttons / badge ---------- */
+      .appstore {
+        display: inline-flex; align-items: center; gap: 11px;
+        background: #111; color: #fff; text-decoration: none;
+        padding: 11px 22px 11px 18px; border-radius: 16px; min-height: 58px;
+        box-shadow: 0 16px 34px -18px rgba(0, 0, 0, 0.6);
+        transition: transform .2s cubic-bezier(.3,1.6,.6,1), box-shadow .2s;
       }
+      .appstore:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 22px 40px -18px rgba(0, 0, 0, 0.6); }
+      .appstore svg { width: 28px; height: 28px; flex: none; }
+      .appstore span { display: grid; line-height: 1.05; font-family: -apple-system, system-ui, sans-serif; }
+      .appstore small { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.01em; }
+      .appstore b { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.01em; }
+      @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .appstore { background: #fff; color: #111; } }
+      :root[data-theme="dark"] .appstore { background: #fff; color: #111; }
+      .btn-ghost {
+        display: inline-flex; align-items: center; gap: 9px; min-height: 58px; padding: 0 22px; border-radius: 16px;
+        border: 1.5px solid var(--line-strong); background: var(--surface); color: var(--ink);
+        font: 700 1rem var(--body); cursor: pointer; text-decoration: none; transition: transform .2s, border-color .2s;
+      }
+      .btn-ghost:hover { transform: translateY(-2px); border-color: var(--coral); }
 
       /* ---------- Hero ---------- */
-      .hero {
-        padding: 56px 0 24px;
-        display: grid;
-        grid-template-columns: 1.05fr 0.95fr;
-        gap: 44px;
-        align-items: center;
+      .hero { position: relative; padding: 34px 0 30px; }
+      .hero::before {
+        content: ""; position: absolute; inset: -120px 0 auto; height: 760px; z-index: -1; pointer-events: none;
+        background:
+          radial-gradient(40% 50% at 15% 30%, rgba(255, 159, 90, 0.22), transparent 70%),
+          radial-gradient(35% 45% at 85% 10%, rgba(168, 203, 183, 0.28), transparent 70%);
       }
-
+      .hero-top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: end; margin-bottom: 26px; }
       .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid var(--line-strong);
-        border-radius: 999px;
-        padding: 6px 13px;
-        background: var(--surface);
-        color: var(--brown-deep);
-        font-size: 0.78rem;
-        font-weight: 750;
-        box-shadow: var(--shadow-sm);
+        display: inline-flex; align-items: center; gap: 9px; padding: 7px 14px 7px 10px; border-radius: 999px;
+        background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+        font-weight: 800; font-size: 0.82rem; color: var(--ink); text-decoration: none;
+      }
+      .eyebrow .live { width: 9px; height: 9px; border-radius: 50%; background: var(--mint-deep); box-shadow: 0 0 0 0 rgba(95, 162, 124, 0.5); animation: live 2s infinite; }
+      @keyframes live { 70% { box-shadow: 0 0 0 9px rgba(95, 162, 124, 0); } 100% { box-shadow: 0 0 0 0 rgba(95, 162, 124, 0); } }
+      .hero h1 { margin-top: 16px; font-size: clamp(3rem, 6.4vw, 5.6rem); line-height: 0.95; font-weight: 700; letter-spacing: -0.025em; }
+      .hero h1 .soft { color: var(--coral); position: relative; display: inline-block; }
+      .hero h1 .soft svg { position: absolute; left: 0; right: 0; bottom: -0.12em; width: 100%; height: 0.3em; overflow: visible; }
+      .hero h1 .soft path { stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 1.1s 0.6s cubic-bezier(.6,0,.2,1) forwards; }
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      .hero-side p { margin: 0 0 22px; color: var(--muted); font-size: 1.15rem; max-width: 42ch; }
+      .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+      .hero-meta { margin-top: 16px; display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.86rem; font-weight: 700; color: var(--muted); }
+      .hero-meta span::before { content: "✓"; color: var(--mint-deep); margin-right: 6px; font-weight: 900; }
+      @media (max-width: 900px) {
+        .hero-top { grid-template-columns: 1fr; gap: 18px; }
+        .hero { padding-top: 30px; }
       }
 
-      .eyebrow .dot {
-        width: 7px; height: 7px; border-radius: 50%;
-        background: var(--coral);
-        box-shadow: 0 0 0 4px rgba(255, 139, 107, 0.22);
-        animation: dotPulse 2.4s ease-in-out infinite;
+      /* ---------- Reel ---------- */
+      .reel {
+        position: relative; border-radius: 34px; overflow: hidden; isolation: isolate;
+        aspect-ratio: 16 / 9; background: var(--night);
+        box-shadow: 0 50px 100px -40px rgba(23, 20, 47, 0.55), 0 0 0 1px var(--line);
+        user-select: none; -webkit-user-select: none;
+        max-height: calc(100svh - 120px); margin-inline: auto;
       }
-      @keyframes dotPulse {
-        0%, 100% { box-shadow: 0 0 0 4px rgba(255, 139, 107, 0.22); }
-        50%       { box-shadow: 0 0 0 9px rgba(255, 139, 107, 0.06); }
+      .reel:fullscreen { border-radius: 0; max-height: none; width: 100%; height: 100%; aspect-ratio: auto; }
+      .reel-stage { position: absolute; inset: 0; cursor: pointer; }
+      .reel-svg { width: 100%; height: 100%; }
+      .reel-loading { position: absolute; inset: 0; display: grid; place-items: center; color: #E8DFFF; font: 600 1rem var(--display); }
+      .reel.is-ready .reel-loading { display: none; }
+      .reel-pill {
+        position: absolute; top: 16px; right: 16px; z-index: 3;
+        display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px 10px 13px; border-radius: 999px; border: 0;
+        background: rgba(255, 255, 255, 0.94); color: #4A342A; font: 800 0.9rem var(--body); cursor: pointer;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+        animation: pillPulse 2.2s ease-in-out infinite;
+        transition: opacity .3s, transform .3s;
+      }
+      .reel-pill svg { width: 20px; height: 20px; }
+      .reel.has-sound .reel-pill { opacity: 0; transform: translateY(-10px) scale(.9); pointer-events: none; }
+      @keyframes pillPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+      .reel-bar {
+        position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 3;
+        display: flex; align-items: center; gap: 6px; padding: 6px 10px 6px 6px; border-radius: 999px;
+        background: rgba(23, 20, 47, 0.42); color: #fff;
+        backdrop-filter: blur(14px) saturate(160%); -webkit-backdrop-filter: blur(14px) saturate(160%);
+        opacity: 0; transform: translateY(8px); transition: opacity .3s, transform .3s;
+      }
+      .reel:hover .reel-bar, .reel:focus-within .reel-bar, .reel:not(.is-playing) .reel-bar { opacity: 1; transform: none; }
+      @media (hover: none) { .reel-bar { opacity: 1; transform: none; } }
+      .reel-btn { width: 38px; height: 38px; flex: none; display: grid; place-items: center; border: 0; border-radius: 50%; background: transparent; color: #fff; cursor: pointer; transition: background .2s; }
+      .reel-btn:hover { background: rgba(255, 255, 255, 0.16); }
+      .reel-btn svg { width: 20px; height: 20px; }
+      .reel .i-pause, .reel.is-playing .i-play { display: none; }
+      .reel.is-playing .i-pause { display: block; }
+      .reel .i-on, .reel.has-sound .i-off { display: none; }
+      .reel.has-sound .i-on { display: block; }
+      .reel-track { position: relative; flex: 1; height: 26px; cursor: pointer; touch-action: none; }
+      .reel-track::before, .reel-fill { content: ""; position: absolute; left: 0; right: 0; top: 11px; height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.28); }
+      .reel-fill { background: #FFB48F; transform-origin: left; transform: scaleX(0); }
+      .reel-tick { position: absolute; top: 9px; width: 2px; height: 8px; margin-left: -1px; border-radius: 2px; background: rgba(255, 255, 255, 0.55); }
+      .reel-chapter { font: 600 0.85rem var(--display); white-space: nowrap; min-width: 92px; }
+      .reel-time { font: 700 0.78rem var(--body); opacity: .8; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .reel-big {
+        position: absolute; inset: 0; margin: auto; z-index: 4; width: 92px; height: 92px; border-radius: 50%; border: 0;
+        background: rgba(255, 255, 255, 0.95); color: #4A342A; display: none; place-items: center; cursor: pointer;
+        box-shadow: 0 20px 50px -14px rgba(0, 0, 0, 0.5);
+      }
+      .reel-big svg { width: 34px; height: 34px; margin-left: 5px; }
+      .reel.is-reduced:not(.is-playing) .reel-big { display: grid; }
+      .reel-caption { margin: 14px auto 0; text-align: center; color: var(--muted); font-size: 0.88rem; font-weight: 600; }
+      @media (max-width: 640px) {
+        .reel { aspect-ratio: 1 / 1; border-radius: 26px; }
+        .reel-chapter, .reel-time { display: none; }
+        .reel-pill { top: 12px; right: 12px; font-size: 0.82rem; }
       }
 
-      h1 {
-        margin: 18px 0 0;
-        max-width: 15ch;
-        font-size: clamp(2.5rem, 6vw, 4.3rem);
-        line-height: 1;
-        letter-spacing: -0.02em;
-        font-weight: 800;
-      }
-
-      .grad {
-        background: linear-gradient(120deg, var(--brown-deep), var(--coral) 60%, var(--orange));
-        -webkit-background-clip: text; background-clip: text; color: transparent;
-      }
-
-      .sub { margin: 20px 0 0; max-width: 50ch; color: var(--muted); font-size: clamp(1.02rem, 1.6vw, 1.18rem); line-height: 1.6; }
-
-      .cta { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
-
-      .btn {
-        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-        min-height: 50px; border-radius: 15px; padding: 13px 22px;
-        font-weight: 750; font-size: 1rem; text-decoration: none;
-        border: 1px solid transparent; cursor: pointer;
-        transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
-        font-family: inherit;
-      }
-      .btn:hover { transform: translateY(-2px); }
-      .btn:active { transform: translateY(0); }
-
-      .btn-primary { color: #fff; background: linear-gradient(135deg, var(--coral), var(--orange)); box-shadow: var(--shadow); }
-      .btn-primary:hover { filter: brightness(1.06); }
-
-      .btn-secondary { color: var(--ink); background: var(--surface); border-color: var(--line-strong); box-shadow: var(--shadow-sm); }
-
-      .trust { margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 0.88rem; font-weight: 600; }
-      .trust span { display: inline-flex; align-items: center; gap: 7px; }
-      .trust svg { color: var(--mint); flex: none; }
-
-      /* ---------- Hero visual ---------- */
-      .shot-stage { display: grid; place-items: center; position: relative; }
-
-      .shot-card {
-        position: relative;
-        width: min(280px, 78%);
-        border-radius: 30px;
-        padding: 8px;
-        background: var(--surface);
-        box-shadow: var(--shadow);
-        animation: cardFloat 6s ease-in-out infinite;
-      }
-      @keyframes cardFloat {
-        0%, 100% { transform: translateY(0) rotate(-1deg); }
-        50%       { transform: translateY(-10px) rotate(1deg); }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .shot-card, .eyebrow .dot { animation: none; }
-        html { scroll-behavior: auto; }
-      }
-      .shot-card img { display: block; width: 100%; border-radius: 24px; }
+      /* ---------- Marquee ---------- */
+      .marquee { margin: 56px 0 10px; background: var(--ink); color: var(--bg); transform: rotate(-1.4deg); overflow: hidden; padding: 16px 0; }
+      .marquee-track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+      .marquee-track span { font: 600 clamp(1.2rem, 2.4vw, 1.7rem) var(--display); padding: 0 22px; white-space: nowrap; display: inline-flex; align-items: center; gap: 44px; }
+      .marquee-track span::after { content: "✦"; color: var(--orange); }
+      @keyframes marquee { to { transform: translateX(-50%); } }
 
       /* ---------- Sections ---------- */
-      .section { padding: 40px 0; }
-      .section-head { max-width: 58ch; margin-bottom: 28px; }
-      .section-head h2 { margin: 0; font-size: clamp(1.7rem, 3.5vw, 2.35rem); letter-spacing: -0.02em; font-weight: 800; }
-      .section-head p { margin: 12px 0 0; color: var(--muted); font-size: 1.05rem; }
+      .section { padding: 90px 0 30px; }
+      .kicker { display: inline-block; font: 800 0.8rem var(--body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); margin-bottom: 14px; }
+      .section-head { max-width: 680px; margin-bottom: 40px; }
+      .section-head h2 { font-size: clamp(2.2rem, 4.6vw, 3.6rem); font-weight: 700; letter-spacing: -0.02em; }
+      .section-head p { margin: 16px 0 0; color: var(--muted); font-size: 1.12rem; }
 
-      .features { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-
-      .card {
-        border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
-        background: var(--surface); box-shadow: var(--shadow-sm);
-        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      /* ---------- Bento ---------- */
+      .bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+      .tile {
+        position: relative; overflow: hidden; border-radius: var(--radius); padding: 30px;
+        background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+        transition: transform .35s cubic-bezier(.2,.9,.3,1.2), box-shadow .35s;
       }
-      .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--line-strong); }
-
-      .card .ic {
-        width: 44px; height: 44px; border-radius: 13px; display: grid; place-items: center;
-        color: #fff; background: linear-gradient(135deg, var(--brown-deep), var(--brown));
-        margin-bottom: 14px; box-shadow: var(--shadow-sm);
+      .tile:hover { transform: translateY(-5px) rotate(-0.3deg); box-shadow: var(--shadow); }
+      .tile h3 { font-size: 1.6rem; margin-bottom: 8px; }
+      .tile p { margin: 0; color: var(--muted); font-size: 1rem; }
+      .t-alarm { grid-column: span 6; grid-row: span 2; background: linear-gradient(165deg, #2A2350 0%, #3A2D5C 45%, #FF9F7A 120%); color: #FFF3E6; border: 0; display: flex; flex-direction: column; }
+      .t-alarm p { color: rgba(255, 243, 230, 0.78); }
+      .t-missions { grid-column: span 6; }
+      .t-streak { grid-column: span 3; }
+      .t-price { grid-column: span 3; background: linear-gradient(150deg, var(--coral), var(--orange)); color: #fff; border: 0; }
+      .t-price p { color: rgba(255, 255, 255, 0.88); }
+      .t-private { grid-column: span 12; display: grid; grid-template-columns: 1.2fr repeat(3, 1fr); gap: 24px; align-items: center; background: var(--surface-2); }
+      .t-private .pv { display: flex; gap: 12px; align-items: flex-start; font-weight: 700; }
+      .t-private .pv i { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); font-style: normal; }
+      .t-private .pv small { display: block; font-weight: 600; color: var(--muted); font-size: 0.88rem; }
+      @media (max-width: 960px) {
+        .t-alarm, .t-missions { grid-column: span 12; }
+        .t-streak, .t-price { grid-column: span 6; }
+        .t-private { grid-template-columns: 1fr 1fr; }
+        .t-private > div:first-child { grid-column: span 2; }
       }
-      .card h3 { margin: 0 0 7px; font-size: 1.06rem; font-weight: 750; }
-      .card p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.55; }
+      @media (max-width: 560px) {
+        .t-streak, .t-price { grid-column: span 12; }
+        .t-private { grid-template-columns: 1fr; }
+        .t-private > div:first-child { grid-column: auto; }
+        .tile { padding: 24px; }
+      }
+      /* alarm tile art */
+      .lock { margin: 28px auto 0; width: min(300px, 100%); flex: 1; display: grid; gap: 12px; align-content: end; }
+      .lock-time { font: 600 4.6rem/1 var(--display); text-align: center; letter-spacing: -0.02em; }
+      .lock-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 20px; background: rgba(255, 255, 255, 0.92); color: #4A342A; animation: buzz 3.2s ease-in-out infinite; }
+      .lock-card img { width: 42px; height: 42px; border-radius: 11px; }
+      .lock-card b { display: block; font-family: var(--display); font-weight: 600; }
+      .lock-card small { color: #86695A; font-weight: 700; }
+      .silent { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.12); font-weight: 700; font-size: 0.92rem; }
+      .switch { width: 46px; height: 28px; border-radius: 99px; background: #FF8B6B; position: relative; flex: none; }
+      .switch::after { content: ""; position: absolute; top: 3px; right: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; }
+      @keyframes buzz { 0%, 62%, 100% { transform: translateX(0); } 64%, 72%, 80% { transform: translateX(-4px) rotate(-1deg); } 68%, 76% { transform: translateX(4px) rotate(1deg); } }
+      /* missions tile */
+      .mission-chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+      .mchip { border-radius: 20px; padding: 16px 10px 12px; background: var(--surface-2); border: 1px solid var(--line); text-align: center; font: 600 1rem var(--display); }
+      .mchip .mi { height: 54px; display: grid; place-items: center; margin-bottom: 6px; }
+      .mchip:nth-child(1) .mi span { width: 22px; height: 22px; border-radius: 50%; background: var(--coral); animation: tap 1.6s infinite; }
+      @keyframes tap { 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 139, 107, .55); transform: scale(1); } 15% { transform: scale(.8); } 40% { box-shadow: 0 0 0 16px rgba(255, 139, 107, 0); transform: scale(1); } }
+      .grid9 { display: grid; grid-template-columns: repeat(3, 10px); gap: 6px; }
+      .grid9 i { width: 10px; height: 10px; border-radius: 50%; background: var(--line-strong); animation: dot 2.4s infinite; }
+      .grid9 i:nth-child(1) { animation-delay: 0s; } .grid9 i:nth-child(5) { animation-delay: .2s; } .grid9 i:nth-child(9) { animation-delay: .4s; } .grid9 i:nth-child(6) { animation-delay: .6s; } .grid9 i:nth-child(3) { animation-delay: .8s; }
+      .grid9 i:nth-child(2), .grid9 i:nth-child(4), .grid9 i:nth-child(7), .grid9 i:nth-child(8) { animation: none; }
+      @keyframes dot { 0%, 8% { background: var(--line-strong); } 12%, 60% { background: var(--coral); } 70%, 100% { background: var(--line-strong); } }
+      .shakephone { width: 24px; height: 40px; border-radius: 7px; border: 4px solid var(--ink); background: var(--orange); animation: shake 1.8s infinite; }
+      @keyframes shake { 0%, 50%, 100% { transform: rotate(0); } 55%, 65%, 75% { transform: rotate(-18deg); } 60%, 70%, 80% { transform: rotate(18deg); } }
+      .qmark { font: 700 1.5rem var(--display); color: var(--mint-deep); }
+      .qmark::before { content: "?"; color: var(--muted); animation: q 2.4s steps(1) infinite; }
+      @keyframes q { 0%, 49% { content: "?"; color: var(--muted); } 50%, 100% { content: "7 ✓"; color: var(--mint-deep); } }
+      @media (max-width: 560px) { .mission-chips { grid-template-columns: repeat(2, 1fr); } }
+      /* streak + price */
+      .streak { display: flex; gap: 7px; margin-top: 22px; }
+      .streak i { flex: 1; aspect-ratio: 1; max-width: 34px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); display: grid; place-items: center; font-style: normal; font-size: 0.72rem; font-weight: 800; color: var(--muted); }
+      .streak i.on { background: var(--mint); border-color: transparent; color: #2F5A43; }
+      .streak i.today { background: var(--coral); color: #fff; border-color: transparent; animation: pop 2.4s infinite; }
+      @keyframes pop { 0%, 100% { transform: scale(1); } 10% { transform: scale(1.18); } 20% { transform: scale(1); } }
+      .big-price { font: 700 4.2rem/1 var(--display); letter-spacing: -0.03em; margin: 4px 0 10px; }
+
+      /* ---------- Try a mission ---------- */
+      .try { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+      .try-card {
+        position: relative; border-radius: 36px; padding: 28px; aspect-ratio: 1 / 1; max-width: 520px; width: 100%; justify-self: center;
+        background: radial-gradient(70% 60% at 50% 35%, #3A2D5C, #17142F); color: #FFF3E6;
+        display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; box-shadow: var(--shadow);
+        transition: background 1s;
+      }
+      .try-card.awake { background: radial-gradient(70% 60% at 50% 35%, #FFE0C2, #FFB48F); color: #4A342A; }
+      .try-top { display: flex; justify-content: space-between; align-items: center; font: 600 1rem var(--display); }
+      .try-dots { display: flex; gap: 7px; }
+      .try-dots i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.22); transition: background .2s, transform .2s; }
+      .try-dots i.on { background: var(--coral); transform: scale(1.2); }
+      .try-capy { position: relative; display: grid; place-items: center; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; border: 0; background: none; padding: 0; }
+      .try-capy svg { width: min(54%, 240px); overflow: visible; }
+      .try-ripple { position: absolute; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; border: 4px solid var(--coral); pointer-events: none; animation: ripple .5s ease-out forwards; }
+      @keyframes ripple { from { transform: scale(.3); opacity: 1; } to { transform: scale(2.2); opacity: 0; } }
+      .try-z { position: absolute; top: 18%; right: 26%; font: 700 2rem var(--display); color: #E8DFFF; animation: zz 2.4s infinite; }
+      .try-card.awake .try-z { display: none; }
+      @keyframes zz { 0% { transform: translate(0, 0); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(30px, -60px); opacity: 0; } }
+      .try-msg { text-align: center; font: 600 1.25rem var(--display); min-height: 1.6em; }
+      .try-again { display: none; margin: 10px auto 0; }
+      .try-card.awake .try-again { display: inline-flex; }
+      .confetti { position: absolute; width: 10px; height: 14px; border-radius: 3px; pointer-events: none; }
+      @media (max-width: 860px) { .try { grid-template-columns: 1fr; gap: 30px; } }
 
       /* ---------- Personalities ---------- */
-      .personalities-grid {
-        display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 36px; align-items: center;
+      .persona { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 40px; align-items: center; }
+      .persona-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .ptab {
+        text-align: left; display: grid; gap: 4px; padding: 18px; border-radius: 22px; cursor: pointer;
+        background: var(--surface); border: 2px solid var(--line); color: var(--ink); font: inherit;
+        transition: border-color .25s, transform .25s, box-shadow .25s;
       }
-      .personality-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-      .p-card {
-        border: 1px solid var(--line); border-radius: 18px; padding: 16px;
-        background: var(--surface); box-shadow: var(--shadow-sm);
+      .ptab:hover { transform: translateY(-3px); }
+      .ptab[aria-selected="true"] { border-color: var(--pc); box-shadow: 0 16px 34px -20px var(--pc); }
+      .ptab .pb { width: 38px; height: 38px; border-radius: 50%; background: var(--pc); display: grid; place-items: center; margin-bottom: 6px; }
+      .ptab .pb svg { width: 30px; height: 30px; }
+      .ptab b { font: 600 1.2rem var(--display); }
+      .ptab small { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+      .persona-stage {
+        position: relative; border-radius: 36px; min-height: 500px; display: grid; place-items: end center; padding-bottom: 40px; overflow: hidden;
+        background: radial-gradient(60% 55% at 50% 45%, color-mix(in srgb, var(--pc) 45%, var(--surface)), var(--surface-2));
+        border: 1px solid var(--line); transition: background .6s;
       }
-      .p-badge {
-        width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
-        margin-bottom: 10px; box-shadow: 0 0 0 3px var(--surface);
+      .persona-stage svg.pcapy { width: min(52%, 250px); overflow: visible; }
+      .persona-bubble {
+        position: absolute; top: 34px; left: 50%; transform: translateX(-50%);
+        background: var(--surface); color: var(--ink); padding: 14px 24px; border-radius: 26px; box-shadow: var(--shadow-sm);
+        font: 600 1.35rem var(--display); text-align: center; width: max-content; max-width: calc(100% - 32px);
       }
-      .p-card h4 { margin: 0 0 4px; font-size: 1rem; font-weight: 750; }
-      .p-card p { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.45; }
+      .persona-bubble b { display: block; font-weight: 600; }
+      .persona-bubble span { display: block; font: 700 0.92rem var(--body); color: var(--muted); }
+      .persona-play {
+        position: absolute; right: 18px; bottom: 18px; display: inline-flex; align-items: center; gap: 7px;
+        padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+        font: 800 0.85rem var(--body); cursor: pointer; box-shadow: var(--shadow-sm);
+      }
+      .persona-play svg { width: 18px; height: 18px; }
+      .persona-play.playing { background: var(--pc); color: #fff; border-color: transparent; }
+      .persona-bubble::after { content: ""; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; border: 10px solid transparent; border-top-color: var(--surface); border-bottom: 0; }
+      @media (max-width: 860px) { .persona { grid-template-columns: 1fr; } .persona-stage { min-height: 400px; order: -1; } }
+      @media (max-width: 420px) { .persona-bubble { font-size: 1.05rem; padding: 12px 18px; } .persona-bubble span { font-size: 0.8rem; } }
 
-      .shot-frame {
-        border-radius: 26px; padding: 8px; background: var(--surface);
-        box-shadow: var(--shadow); max-width: 260px; margin: 0 auto;
-      }
-      .shot-frame img { display: block; width: 100%; border-radius: 20px; }
+      /* ---------- Steps ---------- */
+      .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+      .step { padding: 30px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+      .step .num { font: 700 4.4rem/1 var(--display); color: transparent; -webkit-text-stroke: 2px var(--coral); margin-bottom: 18px; }
+      .step h3 { font-size: 1.45rem; margin-bottom: 8px; }
+      .step p { margin: 0; color: var(--muted); }
+      @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
 
-      /* ---------- How it works ---------- */
-      .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; counter-reset: step; }
-      .step { position: relative; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; background: var(--surface-2); }
-      .step::before {
-        counter-increment: step; content: counter(step);
-        display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px;
-        font-weight: 800; color: var(--brown-deep); background: var(--surface);
-        border: 1px solid var(--line-strong); margin-bottom: 14px;
+      /* ---------- Screens ---------- */
+      .screens { display: flex; justify-content: center; align-items: center; gap: 0; padding: 20px 0 10px; perspective: 1400px; }
+      .phone { width: min(290px, 30vw); border-radius: 44px; padding: 9px; background: #1E1612; box-shadow: var(--shadow); transition: transform .5s cubic-bezier(.2,.9,.3,1.1); }
+      .phone img { border-radius: 36px; width: 100%; }
+      .phone:nth-child(1) { transform: rotate(-8deg) translate(40px, 30px); z-index: 1; }
+      .phone:nth-child(2) { transform: translateY(-10px); z-index: 2; }
+      .phone:nth-child(3) { transform: rotate(8deg) translate(-40px, 30px); z-index: 1; }
+      .screens:hover .phone:nth-child(1) { transform: rotate(-11deg) translate(10px, 34px); }
+      .screens:hover .phone:nth-child(3) { transform: rotate(11deg) translate(-10px, 34px); }
+      .screens:hover .phone:nth-child(2) { transform: translateY(-22px) scale(1.03); }
+      @media (max-width: 640px) {
+        .phone { width: 42vw; border-radius: 30px; padding: 6px; }
+        .phone img { border-radius: 25px; }
+        .phone:nth-child(1) { transform: rotate(-8deg) translate(30px, 20px); }
+        .phone:nth-child(3) { transform: rotate(8deg) translate(-30px, 20px); }
+        .phone:nth-child(2) { width: 46vw; }
       }
-      .step h3 { margin: 0 0 6px; font-size: 1.06rem; font-weight: 750; }
-      .step p { margin: 0; color: var(--muted); font-size: 0.94rem; }
 
       /* ---------- Pricing ---------- */
       .pricing {
-        display: grid; grid-template-columns: 1fr 0.8fr; gap: 32px; align-items: center;
-        border: 1px solid var(--line-strong); border-radius: 26px; padding: 40px;
-        background: radial-gradient(80% 120% at 100% 0%, rgba(255, 159, 90, 0.14), transparent 60%), var(--surface);
-        box-shadow: var(--shadow-sm);
+        display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 50px; border-radius: 40px;
+        background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
       }
-      .price-tag { font-size: clamp(2.4rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; }
-      .pricing h2 { margin: 6px 0 0; font-size: clamp(1.4rem, 3vw, 1.9rem); }
-      .pricing p { margin: 10px 0 0; color: var(--muted); }
-      .pricing .fine { margin-top: 18px; font-size: 0.86rem; color: var(--muted); }
+      .pricing::before { content: ""; position: absolute; width: 520px; height: 520px; right: -160px; top: -200px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 159, 90, .28), transparent 65%); pointer-events: none; }
+      .pricing .amount { font: 700 clamp(4.4rem, 10vw, 7.4rem)/0.9 var(--display); letter-spacing: -0.04em; background: linear-gradient(110deg, var(--brown-deep), var(--coral) 60%, var(--orange)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+      .pricing h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin: 10px 0 12px; }
+      .pricing p { color: var(--muted); margin: 0 0 24px; font-size: 1.08rem; }
+      .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; position: relative; }
+      .checks li { display: flex; gap: 12px; align-items: center; padding: 14px 18px; border-radius: 18px; background: var(--surface-2); border: 1px solid var(--line); font-weight: 700; }
+      .checks li::before { content: "✓"; flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--mint-deep); color: #fff; font-weight: 900; font-size: 0.85rem; }
+      .pricing .fine { font-size: 0.86rem; margin: 18px 0 0; }
+      @media (max-width: 860px) { .pricing { grid-template-columns: 1fr; padding: 30px; border-radius: 30px; } }
 
-      /* ---------- FAQ preview ---------- */
-      .faq-list { display: grid; gap: 14px; }
-      .faq-item { border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; background: var(--surface); }
-      .faq-item h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 750; }
-      .faq-item p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.55; }
+      /* ---------- FAQ ---------- */
+      .faq { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px; align-items: start; }
+      .faq details { border-bottom: 1px solid var(--line-strong); }
+      .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 22px 0; font: 600 1.25rem var(--display); }
+      .faq summary::-webkit-details-marker { display: none; }
+      .faq summary::after { content: "+"; flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); font: 600 1.3rem var(--display); transition: transform .3s, background .3s; }
+      .faq details[open] summary::after { transform: rotate(45deg); background: var(--coral); color: #fff; border-color: transparent; }
+      .faq details p { margin: -6px 0 22px; color: var(--muted); max-width: 62ch; }
+      @media (max-width: 860px) { .faq { grid-template-columns: 1fr; gap: 10px; } }
 
-      /* ---------- Support ---------- */
-      .support {
-        border: 1px solid var(--line-strong); border-radius: 24px; padding: 40px;
-        background: radial-gradient(80% 120% at 100% 0%, rgba(168, 203, 183, 0.18), transparent 60%), var(--surface);
-        box-shadow: var(--shadow-sm);
-        display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: center;
+      /* ---------- Final CTA ---------- */
+      .final {
+        position: relative; overflow: hidden; border-radius: 44px; padding: 70px 50px 0; text-align: center; color: #4A342A;
+        background: linear-gradient(180deg, #FFB48F 0%, #FFD6B5 45%, #FFF1E2 100%);
       }
-      .support h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; }
-      .support p { margin: 12px 0 0; color: var(--muted); font-size: 1.02rem; }
-      .support .actions { display: flex; flex-direction: column; gap: 10px; }
-      .support a.line { color: var(--muted); font-weight: 750; text-decoration: none; }
-      .support a.line:hover { color: var(--ink); }
+      .final .sun { position: absolute; left: 50%; top: 58%; width: 520px; height: 520px; margin-left: -260px; border-radius: 50%; background: radial-gradient(circle, #FFC47E 0 30%, rgba(255, 196, 126, .35) 31%, transparent 62%); animation: sunrise 8s ease-in-out infinite alternate; }
+      @keyframes sunrise { from { transform: translateY(30px); } to { transform: translateY(-20px); } }
+      .final h2 { position: relative; font-size: clamp(2.6rem, 6.4vw, 5rem); font-weight: 700; letter-spacing: -0.025em; }
+      .final p { position: relative; margin: 14px auto 28px; max-width: 46ch; font-size: 1.15rem; color: #6B4E3E; }
+      .final .appstore { position: relative; background: #111; color: #fff; }
+      .final-capy { position: relative; width: min(300px, 70%); margin: 20px auto 0; }
+      .final-capy .c-paw-r { transform-box: fill-box; transform-origin: 50% 50%; animation: wave 3s ease-in-out infinite; }
+      @keyframes wave { 0%, 40%, 100% { transform: none; } 48% { transform: translate(40px, -150px) rotate(-20deg); } 56% { transform: translate(58px, -150px) rotate(22deg); } 64% { transform: translate(40px, -150px) rotate(-20deg); } 72% { transform: translate(58px, -150px) rotate(22deg); } 80% { transform: translate(40px, -150px) rotate(-20deg); } 90% { transform: none; } }
+      .final-hill { position: absolute; left: -5%; right: -5%; bottom: -40px; height: 120px; border-radius: 50% 50% 0 0; background: #A8CBB7; }
+      @media (max-width: 560px) { .final { padding: 50px 22px 0; border-radius: 30px; } }
 
       /* ---------- Footer ---------- */
-      footer { padding: 30px 0 44px; color: var(--muted); }
-      .footer-inner {
-        display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-        border-top: 1px solid var(--line); padding-top: 24px; font-size: 0.92rem;
-      }
-      .footer-links { display: inline-flex; gap: 8px; flex-wrap: wrap; }
-      .footer-links a {
-        color: var(--muted); text-decoration: none; font-weight: 650; padding: 6px 10px; border-radius: 8px;
-        transition: color 160ms ease, background 160ms ease;
-      }
+      footer { padding: 50px 0 60px; color: var(--muted); }
+      .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; font-size: 0.95rem; font-weight: 600; }
+      .footer-links { display: flex; gap: 4px; flex-wrap: wrap; }
+      .footer-links a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 10px; font-weight: 700; }
       .footer-links a:hover { color: var(--ink); background: var(--surface); }
 
-      :focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; border-radius: 6px; }
+      /* ---------- Reveal ---------- */
+      [data-reveal] { opacity: 0; transform: translateY(34px); transition: opacity .8s cubic-bezier(.2,.8,.2,1), transform .8s cubic-bezier(.2,.8,.2,1); transition-delay: var(--d, 0s); }
+      [data-reveal].in { opacity: 1; transform: none; }
+      .no-js [data-reveal] { opacity: 1; transform: none; }
 
-      @media (max-width: 900px) {
-        .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
-        .shot-stage { order: -1; }
-        .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .steps { grid-template-columns: 1fr; }
-        .personalities-grid { grid-template-columns: 1fr; }
-        .pricing, .support { grid-template-columns: 1fr; padding: 30px; text-align: left; }
-      }
-      @media (max-width: 480px) {
-        .hero { padding-top: 26px; gap: 22px; }
-        h1 { font-size: clamp(2rem, 9vw, 2.5rem); max-width: 100%; }
-        .cta { flex-direction: column; }
-        .btn { width: 100%; }
-        .features { grid-template-columns: 1fr; }
-        .personality-list { grid-template-columns: 1fr; }
-        .section { padding: 28px 0; }
-        .pricing, .support { padding: 20px; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; }
+        [data-reveal] { opacity: 1; transform: none; }
       }
     </style>
   </head>
-  <body>
-    <header class="site-header">
-      <div class="wrap topbar">
-        <a class="brand" href="./" aria-label="Rise & Capy home">
-          <img class="brand-icon" src="icon.png" width="26" height="26" alt="" />
-          <span>Rise &amp; Capy</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#features">Features</a>
-          <a href="#personalities">Personalities</a>
-          <a href="faq/">FAQ</a>
-          <a class="nav-cta" href="https://apps.apple.com/app/id6804264261">
-            Download<span class="nav-text">&nbsp;the app</span>
-          </a>
-        </nav>
+  <body class="no-js">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./" aria-label="Rise & Capy home">
+        <img src="icon.png" width="30" height="30" alt="" />
+        <span>Rise &amp; Capy</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#try">Try it</a>
+        <a href="#personalities">Personalities</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6804264261">Get the app</a>
       </div>
-    </header>
+    </nav>
 
     <main>
-      <section class="wrap hero">
-        <div>
-          <span class="eyebrow"><span class="dot"></span> Launching soon on the App Store</span>
-          <h1>Wake up gently. <span class="grad">Rise with your capy.</span></h1>
-          <p class="sub">
-            Rise &amp; Capy is a cozy alarm clock for iPhone — real system alarms, playful wake-up missions, and a capybara who actually seems to care whether you get up.
-          </p>
-          <div class="cta">
-            <a class="btn btn-primary" href="mailto:randyventures06@gmail.com?subject=Notify%20me%20when%20Rise%20%26%20Capy%20launches">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-              Notify me at launch
-            </a>
-            <a class="btn btn-secondary" href="https://apps.apple.com/app/id6804264261">View on the App Store</a>
+      <section class="hero">
+        <div class="wrap hero-top">
+          <div>
+            <a class="eyebrow" href="https://apps.apple.com/app/id6804264261"><span class="live"></span> Now live on the App Store</a>
+            <h1>Mornings,<br /><span class="soft">but softer.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4,14 C60,4 120,4 160,10 S250,18 296,6" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity=".45"/></svg></span></h1>
           </div>
-          <div class="trust">
-            <span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              One-time $9.99, no subscription
-            </span>
-            <span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              No account, no ads
-            </span>
-            <span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              Everything stays on your phone
-            </span>
+          <div class="hero-side">
+            <p>Rise &amp; Capy is the cozy alarm clock for iPhone: real system alarms, playful wake-up missions, and a capybara who actually cares whether you get up.</p>
+            <div class="hero-cta">
+              <a class="appstore" href="https://apps.apple.com/app/id6804264261" aria-label="Download Rise & Capy on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.24-.02 2.02-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.39-.92-2.41-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.68-1.28z"/></svg>
+                <span><small>Download on the</small><b>App Store</b></span>
+              </a>
+            </div>
+            <div class="hero-meta"><span>Pay once, no subscription</span><span>No account</span><span>No ads</span></div>
           </div>
         </div>
 
-        <div class="shot-stage">
-          <div class="shot-card">
-            <img src="screenshot-welcome.jpg" alt="Rise & Capy welcome screen showing the Capy mascot and the tagline 'A calmer alarm clock with a capybara by your side'" loading="eager" />
+        <div class="wrap">
+          <div class="reel" id="reel">
+            <div class="reel-stage" aria-label="Rise & Capy motion reel. Click to turn sound on or pause."></div>
+            <div class="reel-loading">Waking Capy…</div>
+            <button class="reel-pill" type="button" data-reel-pill>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+              Tap for sound
+            </button>
+            <button class="reel-big" type="button" data-reel-big aria-label="Play the reel with sound">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg>
+            </button>
+            <div class="reel-bar">
+              <button class="reel-btn" type="button" data-reel-play aria-label="Pause reel">
+                <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>
+                <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1.5"/><rect x="14" y="4" width="4" height="16" rx="1.5"/></svg>
+              </button>
+              <span class="reel-chapter" data-reel-chapter>Mornings</span>
+              <div class="reel-track" data-reel-bar role="slider" tabindex="0" aria-label="Reel position" aria-valuemin="0" aria-valuemax="32"><span class="reel-fill" data-reel-fill></span></div>
+              <span class="reel-time" data-reel-time>0:00 / 0:32</span>
+              <button class="reel-btn" type="button" data-reel-sound aria-label="Turn sound on" aria-pressed="false">
+                <svg class="i-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                <svg class="i-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+              <button class="reel-btn" type="button" data-reel-full aria-label="Fullscreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="wrap section" id="features">
-        <div class="section-head">
-          <h2>An alarm clock that actually gets you up</h2>
-          <p>Not another snooze-and-forget app. Rise &amp; Capy is built to make the hardest part of the day feel a little softer — and a little harder to ignore.</p>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Real AlarmKit alarms</span><span>Rings through Silent</span><span>Wake-up missions</span><span>Four capy personalities</span><span>Pay once, keep forever</span><span>No account</span><span>Speaks 16 languages</span><span>Morning streaks</span>
+          <span>Real AlarmKit alarms</span><span>Rings through Silent</span><span>Wake-up missions</span><span>Four capy personalities</span><span>Pay once, keep forever</span><span>No account</span><span>Speaks 16 languages</span><span>Morning streaks</span>
         </div>
-        <div class="features">
-          <article class="card">
-            <div class="ic" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/></svg>
-            </div>
+      </div>
+
+      <section class="wrap section" id="features">
+        <div class="section-head" data-reveal>
+          <span class="kicker">Why it works</span>
+          <h2>An alarm clock that actually gets you up.</h2>
+          <p>Not another snooze-and-forget app. Rise &amp; Capy makes the hardest part of the day feel a little softer, and a little harder to ignore.</p>
+        </div>
+        <div class="bento">
+          <article class="tile t-alarm" data-reveal>
             <h3>Real alarms, not notifications</h3>
-            <p>Built on Apple's AlarmKit — the same machinery behind the system Clock app — so Capy rings through Silent and most Focus modes.</p>
-          </article>
-          <article class="card">
-            <div class="ic" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            <p>Built on Apple's AlarmKit, the same system behind the built-in Clock app, so Capy rings through Silent mode and most Focus modes.</p>
+            <div class="lock" aria-hidden="true">
+              <div class="lock-time">7:00</div>
+              <div class="lock-card"><img src="icon.png" alt="" /><div><b>Rise &amp; Capy</b><small>Time to rise ☀</small></div></div>
+              <div class="silent"><span>Silent mode</span><span class="switch"></span></div>
             </div>
+          </article>
+          <article class="tile t-missions" data-reveal style="--d:.08s">
             <h3>Wake-up missions</h3>
-            <p>Tap the sleepy capybara, repeat a pattern, answer a question, or shake off the morning fog before you're allowed to snooze.</p>
-          </article>
-          <article class="card">
-            <div class="ic" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <p>Tap the sleepy capybara, repeat a pattern, shake off the fog, or answer a question before you can dismiss.</p>
+            <div class="mission-chips" aria-hidden="true">
+              <div class="mchip"><div class="mi"><span></span></div>Tap</div>
+              <div class="mchip"><div class="mi"><div class="grid9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>Pattern</div>
+              <div class="mchip"><div class="mi"><div class="shakephone"></div></div>Shake</div>
+              <div class="mchip"><div class="mi"><span class="qmark"></span></div>Question</div>
             </div>
-            <h3>A mascot with a personality</h3>
-            <p>Sleepy, Sunny, Chill, or Motivated Capy — pick one, and it genuinely changes how Capy wakes you up every morning.</p>
           </article>
-          <article class="card">
-            <div class="ic" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+          <article class="tile t-streak" data-reveal style="--d:.12s">
+            <h3>Morning streaks</h3>
+            <p>Finish your mission, Capy celebrates, and your streak grows.</p>
+            <div class="streak" aria-hidden="true"><i class="on">M</i><i class="on">T</i><i class="on">W</i><i class="on">T</i><i class="today">F</i><i>S</i><i>S</i></div>
+          </article>
+          <article class="tile t-price" data-reveal style="--d:.16s">
             <h3>Pay once. That's it.</h3>
-            <p>$9.99, one time. No subscription, no free trial that quietly converts, no surprise renewal.</p>
+            <div class="big-price">$9.99</div>
+            <p>No subscription, no trial that quietly converts, no renewals.</p>
           </article>
+          <article class="tile t-private" data-reveal>
+            <div><h3>Private by design</h3><p>Everything lives on your iPhone.</p></div>
+            <div class="pv"><i>🙅</i><div>No account<small>No sign-up, no login</small></div></div>
+            <div class="pv"><i>🚫</i><div>No ads<small>No ad or analytics SDKs</small></div></div>
+            <div class="pv"><i>🔒</i><div>Stays on device<small>Alarms, preferences, and streak</small></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section" id="try">
+        <div class="try">
+          <div data-reveal>
+            <span class="kicker">Try a wake-up mission</span>
+            <div class="section-head" style="margin-bottom:0">
+              <h2>Go on, wake Capy up.</h2>
+              <p>This is the Tap mission, one of four. In the app it stands between you and the snooze button. Here it's just for fun: tap the sleepy capybara five times.</p>
+            </div>
+          </div>
+          <div class="try-card" id="tryCard" data-reveal style="--d:.1s">
+            <div class="try-top"><span>Tap mission</span><span class="try-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+            <button class="try-capy" id="tryCapy" type="button" aria-label="Tap the sleeping capybara (0 of 5 taps)">
+              <span class="try-z" aria-hidden="true">z</span>
+              <svg viewBox="-165 -395 365 415" aria-hidden="true"></svg>
+            </button>
+            <div>
+              <div class="try-msg" id="tryMsg" aria-live="polite">Capy is fast asleep…</div>
+              <div style="text-align:center"><button class="btn-ghost try-again" id="tryAgain" type="button">Put Capy back to sleep</button></div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="wrap section" id="personalities">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
+          <span class="kicker">Personalities</span>
           <h2>Four capybaras. Four completely different mornings.</h2>
-          <p>Every personality has its own expression, its own badge, and its own way of talking to you when the alarm goes off.</p>
+          <p>Each one has her own badge, her own mood, and her own voice. Tap one to hear how she wakes you up (sound on).</p>
         </div>
-        <div class="personalities-grid">
-          <div class="shot-frame">
-            <img src="screenshot-personality.jpg" alt="Rise & Capy personality picker showing Sleepy, Sunny, Chill, and Motivated Capy, each with a distinct badge" loading="lazy" />
+        <div class="persona">
+          <div class="persona-tabs" role="tablist" aria-label="Capy personalities" data-reveal>
+            <button class="ptab" role="tab" data-p="sleepy" style="--pc:#A8CBB7" aria-selected="true"><span class="pb"></span><b>Sleepy Capy</b><small>Takes it slow, one yawn at a time</small></button>
+            <button class="ptab" role="tab" data-p="sunny" style="--pc:#FF9F5A" aria-selected="false"><span class="pb"></span><b>Sunny Capy</b><small>Bright, warm, and a little chatty</small></button>
+            <button class="ptab" role="tab" data-p="chill" style="--pc:#B9AC9A" aria-selected="false"><span class="pb"></span><b>Chill Capy</b><small>Easygoing and endlessly patient</small></button>
+            <button class="ptab" role="tab" data-p="motivated" style="--pc:#FF8B6B" aria-selected="false"><span class="pb"></span><b>Motivated Capy</b><small>Your biggest morning cheerleader</small></button>
           </div>
-          <div class="personality-list">
-            <div class="p-card">
-              <div class="p-badge" style="background:var(--mint)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
-              </div>
-              <h4>Sleepy Capy</h4>
-              <p>Takes it slow, one yawn at a time. Rings calm, talks softer.</p>
-            </div>
-            <div class="p-card">
-              <div class="p-badge" style="background:var(--orange)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="#fff" stroke="none"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
-              </div>
-              <h4>Sunny Capy</h4>
-              <p>Bright, warm, and a little chatty. "Good morning, sunshine!"</p>
-            </div>
-            <div class="p-card">
-              <div class="p-badge" style="background:var(--taupe)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3c4 3 6 6 6 10a6 6 0 0 1-12 0c0-4 2-7 6-10z"/></svg>
-              </div>
-              <h4>Chill Capy</h4>
-              <p>Easygoing and endlessly patient. No rush, ever.</p>
-            </div>
-            <div class="p-card">
-              <div class="p-badge" style="background:var(--coral)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2 3 14h6l-1 8 11-14h-6l0-6z"/></svg>
-              </div>
-              <h4>Motivated Capy</h4>
-              <p>Your biggest morning cheerleader. "RISE AND SHINE!"</p>
-            </div>
+          <div class="persona-stage" id="personaStage" role="tabpanel" aria-live="polite" style="--pc:#A8CBB7" data-reveal>
+            <div class="persona-bubble" id="personaQuote"><b>Mmm... good morning.</b><span>Let's ease into today, together.</span></div>
+            <button class="persona-play" id="personaPlay" type="button" aria-label="Hear Capy's wake-up line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>Hear her</button>
+            <svg class="pcapy" id="personaCapy" viewBox="-165 -395 365 415" aria-hidden="true"></svg>
           </div>
         </div>
       </section>
 
       <section class="wrap section" id="how">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>A short, warm onboarding — then you're done thinking about it.</p>
+        <div class="section-head" data-reveal>
+          <span class="kicker">How it works</span>
+          <h2>One cozy minute of setup. Then just sleep.</h2>
         </div>
         <div class="steps">
-          <div class="step">
-            <h3>Tell Capy your vibe</h3>
-            <p>Your morning intention, wake time, days, wake-up style, and a capybara personality — about a minute, start to finish.</p>
-          </div>
-          <div class="step">
-            <h3>Set your first alarm</h3>
-            <p>Pick a sound, a snooze length, and an optional wake-up mission. Rise &amp; Capy schedules a real system alarm.</p>
-          </div>
-          <div class="step">
-            <h3>Wake up, for real</h3>
-            <p>The alarm rings, you complete your mission, Capy celebrates, and your morning streak grows.</p>
-          </div>
+          <div class="step" data-reveal><div class="num">1</div><h3>Tell Capy your vibe</h3><p>Your morning intention, wake time, days, wake-up style, and a capybara personality. About a minute, start to finish.</p></div>
+          <div class="step" data-reveal style="--d:.08s"><div class="num">2</div><h3>Set your first alarm</h3><p>Pick a sound, a snooze length, and an optional wake-up mission. Rise &amp; Capy schedules a real system alarm.</p></div>
+          <div class="step" data-reveal style="--d:.16s"><div class="num">3</div><h3>Wake up, for real</h3><p>The alarm rings, you complete your mission, Capy celebrates, and your morning streak grows.</p></div>
         </div>
       </section>
 
-      <section class="wrap section" id="download">
-        <div class="pricing">
+      <section class="wrap section" id="screens">
+        <div class="section-head" data-reveal style="text-align:center;margin-inline:auto">
+          <span class="kicker">On your iPhone</span>
+          <h2>Made with care, down to the last pixel.</h2>
+        </div>
+        <div class="screens" data-reveal>
+          <div class="phone"><img src="screenshot-personality.jpg" alt="Personality picker showing Sleepy, Sunny, Chill, and Motivated Capy" loading="lazy" /></div>
+          <div class="phone"><img src="screenshot-welcome.jpg" alt="Welcome screen with the Capy mascot: a calmer alarm clock with a capybara by your side" loading="lazy" /></div>
+          <div class="phone"><img src="screenshot-paywall.jpg" alt="Unlock screen showing the $9.99 one-time purchase with Motivated Capy" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="pricing">
+        <div class="pricing" data-reveal>
           <div>
-            <span class="eyebrow"><span class="dot"></span> Simple pricing</span>
-            <div class="price-tag">$9.99</div>
-            <h2>One simple one-time purchase.</h2>
-            <p>No subscription. No trial. No recurring billing. Buy it once, and Capy is yours on that device for good.</p>
-            <div class="cta">
-              <a class="btn btn-primary" href="mailto:randyventures06@gmail.com?subject=Notify%20me%20when%20Rise%20%26%20Capy%20launches">Notify me at launch</a>
-              <a class="btn btn-secondary" href="https://apps.apple.com/app/id6804264261">View on the App Store</a>
-            </div>
+            <span class="kicker">Simple pricing</span>
+            <div class="amount">$9.99</div>
+            <h2>One purchase. Every capy, forever.</h2>
+            <p>Free to download, then one $9.99 purchase unlocks Rise &amp; Capy for good. No subscription, no trial that converts, no recurring billing.</p>
+            <a class="appstore" href="https://apps.apple.com/app/id6804264261" aria-label="Download Rise & Capy on the App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.24-.02 2.02-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.39-.92-2.41-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.68-1.28z"/></svg>
+              <span><small>Download on the</small><b>App Store</b></span>
+            </a>
             <p class="fine">Requires iPhone with iOS 26 or later. Restore Purchases is available if you reinstall or switch devices.</p>
           </div>
-          <div class="shot-frame">
-            <img src="screenshot-paywall.jpg" alt="Rise & Capy paywall screen showing the $9.99 one-time purchase and Motivated Capy" loading="lazy" />
-          </div>
+          <ul class="checks">
+            <li>Unlimited alarms with Capy by your side</li>
+            <li>All four wake-up missions</li>
+            <li>Every Capy personality and sound</li>
+            <li>All future updates included</li>
+            <li>No account. Everything stays on your phone.</li>
+          </ul>
         </div>
       </section>
 
       <section class="wrap section" id="faq">
-        <div class="section-head">
-          <h2>Questions people actually ask</h2>
-          <p>The short version of a few common ones — the full list is on the <a href="faq/">FAQ page</a>.</p>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3>Is Rise &amp; Capy a subscription?</h3>
-            <p>No. It's a single $9.99 purchase for lifetime access — no trial that quietly converts, no recurring charge.</p>
+        <div class="faq">
+          <div class="section-head" data-reveal>
+            <span class="kicker">FAQ</span>
+            <h2>Questions people actually ask.</h2>
+            <p>The short versions. The full list is on the <a href="faq/">FAQ page</a>, or <a href="mailto:randyventures06@gmail.com?subject=Rise%20%26%20Capy%20Support">email us</a>.</p>
           </div>
-          <div class="faq-item">
-            <h3>Do I need to create an account?</h3>
-            <p>No. There's no sign-up and no server. Your alarms, preferences, and streak are stored locally on your iPhone.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Will it wake me up through Silent mode?</h3>
-            <p>Yes. Alarms are scheduled through Apple's AlarmKit — the same system behind the built-in Clock app — so they ring through Silent and most Focus modes.</p>
+          <div data-reveal style="--d:.08s">
+            <details open><summary>Is Rise &amp; Capy a subscription?</summary><p>No. The download is free, and a single $9.99 purchase unlocks the app for life. There's no trial that quietly converts and no recurring charge.</p></details>
+            <details><summary>Will it wake me up through Silent mode?</summary><p>Yes. Alarms are scheduled through Apple's AlarmKit, the same system behind the built-in Clock app, so they ring through Silent and most Focus modes.</p></details>
+            <details><summary>Do I need to create an account?</summary><p>No. There's no sign-up and no server. Your alarms, preferences, and streak are stored locally on your iPhone.</p></details>
+            <details><summary>Can I turn wake-up missions off?</summary><p>Yes. Each alarm's mission is optional. Set it to "None" if you'd rather just tap to dismiss.</p></details>
+            <details><summary>Does Capy speak my language?</summary><p>Probably! The app and Capy's spoken wake-up lines come in 16 languages, including English, Spanish, French, German, Japanese, Korean, Chinese, Hindi, Arabic, and Portuguese.</p></details>
+            <details><summary>What do I need to run it?</summary><p>An iPhone running iOS 26 or later. There's no iPad layout, Apple Watch app, or Android version yet.</p></details>
           </div>
         </div>
       </section>
 
-      <section class="wrap section" id="support">
-        <div class="support">
-          <div>
-            <h2>Need a hand?</h2>
-            <p>For purchase, technical, or privacy questions, reach out any time. We read every message and reply as quickly as we can.</p>
-          </div>
-          <div class="actions">
-            <a class="btn btn-primary" href="mailto:randyventures06@gmail.com?subject=Rise%20%26%20Capy%20Support">Email support</a>
-            <a class="line" href="mailto:randyventures06@gmail.com">randyventures06@gmail.com</a>
-          </div>
+      <section class="wrap section">
+        <div class="final" data-reveal>
+          <div class="sun" aria-hidden="true"></div>
+          <h2>Your mornings,<br />but softer.</h2>
+          <p>Rise &amp; Capy is live on the App Store. Capy is waiting, and so is your alarm.</p>
+          <a class="appstore" href="https://apps.apple.com/app/id6804264261" aria-label="Download Rise & Capy on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.24-.02 2.02-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.39-.92-2.41-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.68-1.28z"/></svg>
+            <span><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <div class="final-hill" aria-hidden="true"></div>
+          <svg class="final-capy" id="finalCapy" viewBox="-165 -395 365 405" aria-hidden="true"></svg>
         </div>
       </section>
     </main>
@@ -602,9 +738,192 @@
           <a href="privacy/">Privacy Policy</a>
           <a href="terms/">Terms of Use</a>
           <a href="faq/">FAQ</a>
-          <a href="mailto:randyventures06@gmail.com">Support</a>
+          <a href="mailto:randyventures06@gmail.com?subject=Rise%20%26%20Capy%20Support">Support</a>
         </nav>
       </div>
     </footer>
+
+    <script src="reel/gsap.min.js"></script>
+    <script src="reel/capy.js?v=4"></script>
+    <script src="reel/reel.js?v=4"></script>
+    <script>
+      (function () {
+        document.body.classList.remove("no-js");
+        const { capySVG, capyIdle, BADGES } = window.Capy;
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        // ---- reel ----
+        window.mountReel(document.getElementById("reel"), { assetBase: "" });
+
+        // ---- scroll reveal ----
+        const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        }), { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+        document.querySelectorAll("[data-reveal]").forEach((el) => io.observe(el));
+
+        // ---- little sound kit for the toy (only ever plays on a tap) ----
+        const sfx = {};
+        ["tap", "pop", "sparkle", "yawn", "boing"].forEach((n) => { sfx[n] = new Audio("reel/sfx/" + n + ".mp3"); sfx[n].preload = "auto"; });
+        const play = (n, v = 0.6) => { try { const a = sfx[n].cloneNode(); a.volume = v; a.play().catch(() => {}); } catch (e) {} };
+
+        // ---- try a mission ----
+        const card = document.getElementById("tryCard");
+        const btn = document.getElementById("tryCapy");
+        const svg = btn.querySelector("svg");
+        const msg = document.getElementById("tryMsg");
+        const dots = [...card.querySelectorAll(".try-dots i")];
+        let taps = 0, idle = [];
+        const lines = ["Capy is fast asleep…", "Mmm… five more minutes", "Huh? Is it morning?", "Okay, okay, I'm waking…", "Almost there…"];
+        function sleepCapy() {
+          idle.forEach((t) => t.kill());
+          svg.innerHTML = capySVG({ personality: "sleepy", mood: "sleepy" });
+          idle = capyIdle(svg.querySelector(".capy"), gsap);
+          gsap.set(svg.querySelector(".c-head"), { rotation: 3, y: 6, transformOrigin: "50% 100%" });
+          taps = 0;
+          dots.forEach((d) => d.classList.remove("on"));
+          card.classList.remove("awake");
+          msg.textContent = lines[0];
+          btn.setAttribute("aria-label", "Tap the sleeping capybara (0 of 5 taps)");
+        }
+        sleepCapy();
+        btn.addEventListener("click", (e) => {
+          if (taps >= 5) return;
+          taps++;
+          dots[taps - 1].classList.add("on");
+          const r = btn.getBoundingClientRect();
+          const ripple = document.createElement("span");
+          ripple.className = "try-ripple";
+          ripple.style.left = (e.clientX ? e.clientX - r.left : r.width / 2) + "px";
+          ripple.style.top = (e.clientY ? e.clientY - r.top : r.height / 2) + "px";
+          btn.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 600);
+          const bob = svg.querySelector(".c-bob");
+          gsap.fromTo(bob, { scaleY: 0.86, scaleX: 1.1, transformOrigin: "50% 100%" }, { scaleY: 1, scaleX: 1, duration: 0.6, ease: "elastic.out(1,0.35)" });
+          btn.setAttribute("aria-label", `Tap the sleeping capybara (${taps} of 5 taps)`);
+          if (taps < 5) {
+            play("tap", 0.7);
+            msg.textContent = lines[taps];
+            // waking gradually: eyes go half-lidded from the third tap, ears perk up
+            const c = svg.querySelector(".capy");
+            if (taps >= 3) {
+              gsap.set(c.querySelector(".c-eyes-closed"), { opacity: 0 });
+              gsap.set(c.querySelector(".c-eyes-open"), { opacity: 1, scaleY: 0.35 + 0.15 * (taps - 3), transformOrigin: "50% 50%" });
+            }
+            gsap.to(c.querySelector(".c-head"), { y: 6 - taps * 1.5, duration: 0.3 });
+            gsap.to([c.querySelector(".c-ear-l"), c.querySelector(".c-ear-r")], { rotation: (i) => (i ? 1 : -1) * taps * 2.5, transformOrigin: "50% 50%", duration: 0.3 });
+            return;
+          }
+          // awake!
+          play("yawn", 0.6);
+          setTimeout(() => play("sparkle", 0.5), 450);
+          card.classList.add("awake");
+          msg.textContent = "Good morning! ☀ You're up.";
+          const c = svg.querySelector(".capy");
+          gsap.set(c.querySelector(".c-eyes-closed"), { opacity: 0 });
+          gsap.set(c.querySelector(".c-eyes-open"), { opacity: 1, scaleY: 1 });
+          gsap.set(c.querySelector(".c-mouth-sleepy"), { opacity: 0 });
+          gsap.set([c.querySelector(".c-mouth-excited"), c.querySelector(".c-blush")], { opacity: 1 });
+          gsap.to(c.querySelector(".c-head"), { rotation: 0, y: 0, duration: 0.3, ease: "back.out(3)" });
+          gsap.timeline()
+            .to(bob, { y: -80, duration: 0.3, ease: "power2.out" })
+            .to(bob, { y: 0, duration: 0.3, ease: "power2.in" })
+            .fromTo(bob, { scaleY: 0.88, scaleX: 1.08 }, { scaleY: 1, scaleX: 1, duration: 0.5, ease: "elastic.out(1,0.4)" });
+          gsap.to(c.querySelectorAll(".c-paw-l, .c-paw-r"), { y: -78, duration: 0.35, ease: "back.out(2)", delay: 0.15, yoyo: true, repeat: 1, repeatDelay: 0.6 });
+          if (!reduce) {
+            const colors = ["#FF8B6B", "#FF9F5A", "#A8CBB7", "#FFD08A", "#B98255"];
+            for (let i = 0; i < 36; i++) {
+              const p = document.createElement("span");
+              p.className = "confetti";
+              p.style.background = colors[i % colors.length];
+              p.style.left = "50%"; p.style.top = "45%";
+              card.appendChild(p);
+              const a = Math.random() * Math.PI * 2, d = 120 + Math.random() * 200;
+              gsap.timeline({ onComplete: () => p.remove() })
+                .to(p, { x: Math.cos(a) * d, y: Math.sin(a) * d * 0.8, rotation: Math.random() * 720, duration: 0.6, ease: "expo.out" })
+                .to(p, { y: "+=260", opacity: 0, duration: 1.2, ease: "power1.in" });
+            }
+          }
+        });
+        document.getElementById("tryAgain").addEventListener("click", () => { play("pop", 0.5); sleepCapy(); });
+
+        // ---- personalities ----
+        // Same headline + subline the app shows (and Capy speaks) on the ringing screen.
+        const QUOTES = {
+          sleepy: ["Mmm... good morning.", "Let's ease into today, together."],
+          sunny: ["Good morning, sunshine!", "Today's going to be a bright one."],
+          chill: ["Hey. Morning.", "No rush — Capy's got you."],
+          motivated: ["RISE AND SHINE!", "Let's make today count!"],
+        };
+        const MOODS = { sleepy: "sleepy", sunny: "cheerful", chill: "calm", motivated: "excited" };
+        const voices = {};
+        Object.keys(QUOTES).forEach((p) => { voices[p] = new Audio("reel/voices/" + p + ".m4a"); voices[p].preload = "none"; });
+        const playBtn = document.getElementById("personaPlay");
+        let current = "sleepy", speaking = null;
+        function speak(p) {
+          if (speaking) { speaking.pause(); speaking.currentTime = 0; }
+          speaking = voices[p];
+          playBtn.classList.add("playing");
+          speaking.onended = () => playBtn.classList.remove("playing");
+          speaking.play().catch(() => playBtn.classList.remove("playing"));
+          const head = pcapy.querySelector(".c-head");
+          if (!reduce) gsap.fromTo(head, { y: 0 }, { y: -8, duration: 0.13, yoyo: true, repeat: 15, ease: "sine.inOut" });
+        }
+        const stage = document.getElementById("personaStage");
+        const pcapy = document.getElementById("personaCapy");
+        const quote = document.getElementById("personaQuote");
+        const tabs = [...document.querySelectorAll(".ptab")];
+        let pIdle = [], auto = null;
+        tabs.forEach((t) => {
+          const b = BADGES[t.dataset.p];
+          t.querySelector(".pb").innerHTML = `<svg viewBox="-34 -34 68 68" aria-hidden="true">${b.icon}</svg>`;
+        });
+        function choose(p, animate) {
+          tabs.forEach((t) => t.setAttribute("aria-selected", String(t.dataset.p === p)));
+          stage.style.setProperty("--pc", BADGES[p].color);
+          pIdle.forEach((t) => t.kill());
+          current = p;
+          pcapy.innerHTML = capySVG({ personality: p, mood: MOODS[p] });
+          pIdle = capyIdle(pcapy.querySelector(".capy"), gsap);
+          quote.innerHTML = `<b>${QUOTES[p][0]}</b><span>${QUOTES[p][1]}</span>`;
+          if (animate && !reduce) {
+            const bob = pcapy.querySelector(".c-bob");
+            gsap.timeline()
+              .fromTo(bob, { scaleY: 0.8, scaleX: 1.15, transformOrigin: "50% 100%" }, { scaleY: 1.08, scaleX: 0.94, y: -50, duration: 0.25, ease: "power2.out" })
+              .to(bob, { scaleY: 1, scaleX: 1, y: 0, duration: 0.3, ease: "power2.in" })
+              .fromTo(bob, { scaleY: 0.9, scaleX: 1.06 }, { scaleY: 1, scaleX: 1, duration: 0.5, ease: "elastic.out(1,0.4)" });
+            gsap.fromTo(pcapy.querySelector(".c-badge"), { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.5, ease: "back.out(3)", delay: 0.15 });
+            gsap.fromTo(quote, { opacity: 0, y: 10, scale: 0.85 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(2.5)" });
+            if (p === "sleepy") gsap.fromTo(pcapy.querySelector(".c-head"), { rotation: 0, transformOrigin: "50% 100%" }, { rotation: 4, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: -1 });
+          }
+        }
+        choose("sleepy", false);
+        playBtn.addEventListener("click", () => speak(current));
+        tabs.forEach((t, i) => {
+          t.addEventListener("click", () => { clearInterval(auto); auto = null; choose(t.dataset.p, true); speak(t.dataset.p); });
+          t.addEventListener("keydown", (e) => {
+            const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+            if (!d) return;
+            e.preventDefault();
+            const n = tabs[(i + d + tabs.length) % tabs.length];
+            n.focus(); n.click();
+          });
+        });
+        if (!reduce) {
+          const order = Object.keys(QUOTES);
+          let k = 0;
+          const pio = new IntersectionObserver(([e]) => {
+            if (e.isIntersecting && !auto) auto = setInterval(() => { k = (k + 1) % 4; choose(order[k], true); }, 3200);
+            else if (!e.isIntersecting && auto) { clearInterval(auto); auto = 0; }
+          }, { threshold: 0.4 });
+          pio.observe(stage);
+          tabs.forEach((t) => t.addEventListener("click", () => pio.disconnect()));
+        }
+
+        // ---- final waving capy ----
+        const fc = document.getElementById("finalCapy");
+        fc.innerHTML = capySVG({ personality: "sunny", mood: "excited" });
+        capyIdle(fc.querySelector(".capy"), gsap);
+      })();
+    </script>
   </body>
 </html>
