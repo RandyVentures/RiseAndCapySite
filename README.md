@@ -13,7 +13,7 @@ terms/index.html     Terms of Use
 faq/index.html       FAQ
 sitemap.xml
 icon.png, apple-touch-icon.png, favicon-32.png, favicon-64.png   generated from the app's real icon
-screenshot-*.jpg      real app screenshots (welcome, personality picker, paywall)
+screenshot-*.jpg      real app screenshots (welcome, personality picker, Free vs Pro)
 ```
 
 Plain HTML/CSS, no build step, no framework — same convention as the other Randy Ventures app sites (GulpSite, FamilyStopSite, etc).
@@ -48,7 +48,7 @@ When you change `reel/*.js`, bump the `?v=` on its `<script>` tag in `index.html
 
 ## Keeping it in sync with the app
 
-- Pricing: free download with a hard paywall; one $9.99 non-consumable purchase unlocks the app.
+- Pricing (app 1.3+): free plan with one alarm, every Capy, voice and sound, and the Tap mission. Capy Pro is the existing one-time $9.99 non-consumable: unlimited alarms plus the pattern, shake, and question missions. Earlier buyers have Pro. The reel's voiceover still says "Pay once. No subscription. No account." (true of Pro), so its visuals read "Free" with a "Pay once for Pro" chip.
 - Personality copy, colors, badge glyphs, and the spoken lines come from `CapyPersonality.swift`,
   `CapyPersonalityBadge.swift`, and `Resources/Audio/voice_en_*.m4a` in the app repo.
 - Update `sitemap.xml`'s `<lastmod>` dates and the "Last updated" text in privacy/terms/faq whenever their content changes.

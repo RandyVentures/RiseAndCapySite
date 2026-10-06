@@ -11,7 +11,7 @@
 
   const CHAPTERS = [
     { t: 0, label: "Mornings" }, { t: 5.25, label: "Sunrise" }, { t: 8.45, label: "Real alarms" },
-    { t: 11.0, label: "Missions" }, { t: 15.05, label: "Personalities" }, { t: 23.1, label: "Pay once" },
+    { t: 11.0, label: "Missions" }, { t: 15.05, label: "Personalities" }, { t: 23.1, label: "Free + Pro" },
     { t: 27.1, label: "App Store" },
   ];
 
@@ -58,7 +58,7 @@
 
     return `
 <svg class="reel-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="${NS}" role="img"
-  aria-label="Animated reel: a sleepy capybara is woken by a friendly alarm at sunrise, then Rise & Capy's features, four personalities, one-time price, and App Store availability." font-family="${FONT}">
+  aria-label="Animated reel: a sleepy capybara is woken by a friendly alarm at sunrise, then Rise & Capy's features, four personalities, free start with a one-time Pro upgrade, and App Store availability." font-family="${FONT}">
   <defs>
     <linearGradient id="rSky" x1="0" y1="0" x2="0" y2="1">
       <stop id="rSky0" offset="0" stop-color="${SKY.night[0]}"/><stop id="rSky1" offset=".58" stop-color="${SKY.night[1]}"/><stop id="rSky2" offset="1" stop-color="${SKY.night[2]}"/>
@@ -165,7 +165,7 @@
     <g id="rBubbles"></g>
 
     <!-- price -->
-    <text id="rPrice" x="${CX}" y="380" text-anchor="middle" font-size="230" font-weight="700" fill="url(#rPriceGrad)" opacity="0">$9.99</text>
+    <text id="rPrice" x="${CX}" y="380" text-anchor="middle" font-size="230" font-weight="700" fill="url(#rPriceGrad)" opacity="0">Free</text>
     <g id="rChips"></g>
 
     <!-- hero capy -->
@@ -451,7 +451,7 @@
     paw(capyEl, "l", 23.45, 60, 0.3);
     paw(capyEl, "r", 23.45, 60, 0.3);
     const chips = q("#rChips");
-    const chipText = ["Pay once", "No subscription", "No account"];
+    const chipText = ["Pay once for Pro", "No subscription", "No account"];
     const chipW = chipText.map((s) => measure(s, 30, 600) + 96);
     const gap = 22;
     let cx = CX - (chipW.reduce((a, b) => a + b) + gap * 2) / 2;
